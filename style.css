@@ -124,28 +124,28 @@ footer{
 .row {
   display: flex;
   background: linear-gradient(90deg, rgb(31, 35, 37),  #454343, rgb(201, 200, 200));
+    height: 510px;
 }
 
-/* Create two equal columns that sits next to each other */
-.column,.column2{
-  flex: 50%;
-  width:50%;
-  height: 510px;
-      
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 510px; 
 }
 
 
 /*Buttons */
 
 .btn full, .btn ghost {
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
+    position:absolute;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    margin-left: 50px;
+    
     
 }
 /* ----- BUTTONS ----- */
@@ -153,7 +153,7 @@ footer{
 .btn:visited,
 input[type=submit] {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 5px 12px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
